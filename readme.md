@@ -58,8 +58,15 @@
     ```
   
 - After the application start browse to this API URL `http://localhost:5000/api/v1/crawl`
+
+
 - For Swagger API documentation browse to `http://localhost:5000/webCrawler/doc`
+
+
 - Sample request for the API:
     `{
          "domains": ["goosegreaseshop.com", "books.toscrape.com", "www.cratejoy.com"]
     }`
+
+
+- For more domains for testing, refer to `DomainUrlList.txt`
