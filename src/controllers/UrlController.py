@@ -1,11 +1,12 @@
 from apiflask import APIBlueprint
 from flask import make_response
 from src.schemas.CrawlSchema import crawl_schema
+from src.swaggerRequestBodyExamples.CrawlSchemaExamples import crawl_schema_examples
 
 crawl_bp = APIBlueprint("Crawl", __name__)
 
 @crawl_bp.post('/crawl')
-@crawl_bp.input(crawl_schema)
+@crawl_bp.input(crawl_schema, examples=crawl_schema_examples)
 def start_crawl(json_data):
     from main import celery
     data = json_data
