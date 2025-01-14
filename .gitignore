@@ -1,0 +1,4 @@
+.idea
+env/
+logs/
+product_urls_by_domain.txt
